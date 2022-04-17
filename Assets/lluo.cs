@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 
 
+[System.Serializable]
 public class lluo : MonoBehaviour
 {
     public TextMeshProUGUI nimi1;
@@ -14,7 +15,7 @@ public class lluo : MonoBehaviour
     public GameObject poista_hyvaksy;
 
 
-    public void Valmistele(string nimi, int numero, string lisatieto, int maara, int hinta)
+    public void Valmistele(string nimi, int numero, string lisatieto, int maara, float hinta)
     {
         nimi1.text = nimi.ToString();
         numero1.text = numero.ToString();
@@ -32,6 +33,7 @@ public class lluo : MonoBehaviour
     }
     public void kylla()//sopii poistaa
     {
+        poistu.Instance.poista_tuote(this);
         poista_hyvaksy.SetActive(false);
         Destroy(gameObject);
 

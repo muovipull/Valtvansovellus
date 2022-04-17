@@ -1753,7 +1753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1782060907}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -1967,6 +1967,7 @@ MonoBehaviour:
   lisatieto1: {fileID: 435253862}
   maara1: {fileID: 2081248495}
   hinta1: {fileID: 1701937085}
+  tavara_lista: []
 --- !u!4 &786270579
 Transform:
   m_ObjectHideFlags: 0
@@ -2439,7 +2440,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1039788116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 786270578}
+        m_TargetAssemblyTypeName: poistu, Assembly-CSharp
+        m_MethodName: poistulisa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1039788116
 MonoBehaviour:
   m_ObjectHideFlags: 0
